@@ -45,7 +45,7 @@ const Index = () => {
     <div className="flex justify-end items-center flex-col h-screen">
       <Nav />
 
-      <div className="flex-1 flex justify-center border-2 border-dashed w-full mb-2 overflow-scroll">
+      <div className="flex-1 flex justify-center border-2 border-solid w-full overflow-scroll">
         {loading ? (
           <div className="flex flex-col justify-center animate-pulse">
             <h1 className="text-7xl font-black">Loading...</h1>
@@ -65,27 +65,26 @@ const Index = () => {
         )}
       </div>
 
-      <div className="flex">
-        <form onSubmit={handleFlow} className="form-control">
-          <div className="input-group">
+      <div className="flex bg-base-200 w-full justify-center">
+        <form onSubmit={handleFlow} className="form-control flex flex-col my-4 md:flex-row md:space-x-4">
             <input
-              className="input input-lg input-bordered input-success w-96 "
+              className="input input-lg input-bordered input-success w-96"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               type="text"
-              placeholder="What the flowchart is about"
-              autoFocus="on"
+              placeholder="What is the diagram is about?"
+              autoFocus={true}
+            />
+
+            <SelectTemplate
+              onChange={(e) => setSelectedTemplate(e.target.value)}
             />
             <button
               type="submit"
               className={`btn btn-grad btn-lg ${loading ? "loading" : ""}`}
             >
-              {error ? "Retry" : "Generate Flowchart"}
+              {error ? "Retry" : "Generate Diagram"}
             </button>
-          </div>
-          <SelectTemplate
-            onChange={(e) => setSelectedTemplate(e.target.value)}
-          />
         </form>
       </div>
     </div>

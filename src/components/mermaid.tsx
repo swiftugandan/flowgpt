@@ -53,7 +53,7 @@ export const Mermaid: FC<IMermaid> = ({ chart, name }) => {
         </label>
         <ul
           tabIndex={0}
-          className="dropdown-content menu p-2 shadow bg-gray-700 rounded-box w-52"
+          className="dropdown-content menu p-2 shadow bg-gray-100 rounded-box w-52"
         >
           <li>
             <button onClick={copyMermaidCode}>Copy Mermaid Code</button>
