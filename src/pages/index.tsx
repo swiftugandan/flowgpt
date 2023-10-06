@@ -55,10 +55,10 @@ const Index = () => {
             {!!chart ? (
               <Mermaid chart={chart} name={name} />
             ) : (
-              <div className="flex flex-col justify-center text-white">
+              <div className="flex flex-col justify-center">
                 <h1 className="text-7xl font-black">Generate</h1>
-                <h3 className="text-8xl font-black text-success">Flowchart</h3>
-                <h2 className="text-5xl font-black">with AI</h2>
+                <h3 className="text-8xl font-black text-success">diagram</h3>
+                <h2 className="text-7xl font-black">with AI</h2>
               </div>
             )}
           </>
