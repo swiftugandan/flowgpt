@@ -4,13 +4,8 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 mermaid.initialize({
   startOnLoad: true,
-  theme: "dark",
+  theme: "default",
   securityLevel: "loose",
-  themeCSS: `
-  
-  .
-  `,
-  fontFamily: "Fira Code",
 });
 
 interface IMermaid {
