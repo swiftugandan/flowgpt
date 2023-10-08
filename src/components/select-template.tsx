@@ -7,14 +7,15 @@ interface ITemplate {
 }
 
 export const templates: ITemplate[] = [
-  { label: "Flowchart", value: TemplateEnum.FLOWCHART },
   { label: "Mindmap", value: TemplateEnum.MINDMAP },
   { label: "Timeline", value: TemplateEnum.TIMELINE },
-  { label: "User Journey", value: TemplateEnum.USERJOURNEY },
-  { label: "Entity Relationship", value: TemplateEnum.ENTITYRELATIONSHIP },
   { label: "Sequence Diagram", value: TemplateEnum.SEQUENCE },
-  { label: "State Diagram", value: TemplateEnum.STATE },
+  { label: "User Journey", value: TemplateEnum.USERJOURNEY },
+  { label: "Flowchart", value: TemplateEnum.FLOWCHART },
+  { label: "Entity Relationship", value: TemplateEnum.ENTITYRELATIONSHIP },
   // { label: "Class Diagram", value: TemplateEnum.CLASS }, // FIXME: syntax mistake is pretty common for this
+  // { label: "State Diagram", value: TemplateEnum.STATE },
+
 ];
 
 interface ISelectTemplate {
